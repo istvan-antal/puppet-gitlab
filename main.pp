@@ -7,4 +7,6 @@ node default {
         type => 'deb',
         server_address => 'https://packages.gitlab.com/',
     }
+
+    package { ["gitlab-ce"]: ensure => "installed" }
 }
